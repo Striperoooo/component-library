@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <Badge />
+      <Badge badgeColor="green" shape="pill" className="fart">""</Badge>
     </>
   )
 }
