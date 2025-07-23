@@ -1,0 +1,24 @@
+
+FILE STRUCTURE
+
+src/
+  components/
+    Badge/
+      Badge.jsx
+      Badge.css
+      index.js
+    Banner/
+      Banner.jsx
+      Banner.css
+      index.js
+    Card/
+      Card.jsx
+      Card.css
+      index.js
+    Testimonial/
+      Testimonial.jsx
+      Testimonial.css
+      index.js
+  App.jsx
+  index.jsx
+  index.css
