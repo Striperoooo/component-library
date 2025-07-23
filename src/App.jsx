@@ -1,12 +1,13 @@
-import React from 'react'
-import './index.css'
+import React from "react"
+import "./index.css"
+import Badge from "./components/Badge"
 
 
 function App() {
 
   return (
     <>
-      <h1>hello fart</h1>
+      <Badge />
     </>
   )
 }
