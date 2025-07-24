@@ -1,0 +1,95 @@
+.banner {
+    font-size: 0.875rem;
+    padding: 1em;
+    border-radius: 0.375em;
+    min-width: 350px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "icon title"
+        ".... desc"
+    ;
+}
+
+.icon {
+    grid-area: icon;
+    align-self: center;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.80em;
+}
+
+.banner-title {
+    grid-area: title;
+    font-weight: 500;
+
+}
+
+.banner-desc {
+    margin-top: 0.5em;
+    grid-area: desc;
+    font-weight: 400;
+}
+
+/*  */
+.banner.success {
+    background-color: #ECFDF5;
+}
+
+.banner.success .banner-title {
+    color: #065F46;
+}
+
+.banner.success .banner-desc {
+    color: #047857;
+}
+
+.banner.success .icon {
+    color: #34D399;
+}
+
+/*  */
+.banner.warning {
+    background-color: #FFFBEB;
+}
+
+.banner.warning .banner-title,
+.banner.error .banner-title {
+    color: #92400E;
+}
+
+.banner.warning .banner-desc,
+.banner.error .banner-desc {
+    color: #B45309;
+}
+
+.banner.warning .icon {
+    color: #FBBF24;
+}
+
+/*  */
+.banner.error {
+    background-color: #FEF2F2;
+}
+
+.banner.error .icon {
+    color: #F87171;
+}
+
+/*  */
+.banner.neutral {
+    background-color: #EFF6FF;
+}
+
+.banner.neutral .banner-title {
+    color: #1E40AF;
+}
+
+.banner.neutral .banner-desc {
+    color: #1C51B9;
+}
+
+.banner.neutral .icon {
+    color: #60A5FA;
+}
