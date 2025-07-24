@@ -1,0 +1,47 @@
+.banner {
+    font-size: 0.875rem;
+    background-color: #ECFDF5;
+    padding: 1em;
+    border-radius: 0.375em;
+    min-width: 350px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "icon title"
+        ".... desc"
+    ;
+}
+
+
+.icon {
+    grid-area: icon;
+    align-self: center;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.875em;
+}
+
+.banner-title {
+    grid-area: title;
+    font-weight: 500;
+
+}
+
+.banner-desc {
+    margin-top: 0.5em;
+    grid-area: desc;
+    font-weight: 400;
+}
+
+.banner.success .banner-title {
+    color: #065F46;
+}
+
+.banner.success .banner-desc {
+    color: #047857;
+}
+
+.banner.success .icon {
+    color: #34D399;
+}
