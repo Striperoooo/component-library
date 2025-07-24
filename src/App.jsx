@@ -9,10 +9,11 @@ function App() {
   return (
     <>
 
-      <Banner type=""
+      <Badge shape="pill" badgeColor="green" />
+      <Banner type="neutral"
         title="I am the title"
-        className=""
       >
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est iste perspiciatis debitis at.
       </Banner>
     </>
   )
