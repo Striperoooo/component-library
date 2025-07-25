@@ -4,14 +4,26 @@ import "./Card.css"
 import "../../index.css"
 import React from "react"
 
-export default function Card() {
+
+export default function Card({ icon, iconBackground, title, children, className, style }) {
+    const cardIcon = icon || <IoCloudUploadOutline />
+    const cardTitle = title || "Card Title"
+    const cardContent = children ||
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia veritatis rerum eum quidem."
+
+    const cardContainerClassName = classNames("card-container", className)
+
     return (
-        <div className="card-container">
-            <div className="icon">
-                <IoCloudUploadOutline />
+        <div className={cardContainerClassName} style={style}>
+            <div className="icon"
+                style={{ backgroundColor: iconBackground }}
+                aria-hidden="true"
+            >
+                {cardIcon}
             </div>
-            <div className="title">Easy Deployment</div>
-            <div className="content">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</div>
+
+            <h2 className="title">{cardTitle}</h2>
+            <div className="content">{cardContent}</div>
         </div>
     )
 }

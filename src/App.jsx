@@ -3,13 +3,17 @@ import "./index.css"
 import Badge from "./components/Badge"
 import Banner from "./components/Banner"
 import Card from "./components/Card"
+import { ImUpload } from "react-icons/im";
 
 
 function App() {
 
   return (
     <>
-      <Card />
+      <Card
+      >
+
+      </Card>
     </>
   )
 }
