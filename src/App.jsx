@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <Testimonial></Testimonial>
+      <Testimonial slashColor=""></Testimonial>
     </>
   )
 }

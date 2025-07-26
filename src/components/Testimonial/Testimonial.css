@@ -1,0 +1,80 @@
+body {
+    background-color: bisque;
+}
+
+.testimonial-container {
+    background-color: #F9FAFB;
+    width: 100%;
+    max-width: 400px;
+    padding: 3em 1em;
+    border-radius: 0.33em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin: 0 auto;
+}
+
+.brand {
+    color: #1F2937;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-logo {
+    color: #2E59F3;
+    margin-right: 0.5em;
+    font-size: 1.5em;
+}
+
+.brand-accent {
+    color: #2E59F3;
+}
+
+.testimonial-quote {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    max-width: 770px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.testimonial-author {
+    font-style: normal;
+    color: #111827;
+}
+
+.testimonial-meta {
+    color: #6B7280;
+}
+
+@media (min-width: 450px) {
+    .testimonial-container {
+        max-width: 1200px;
+        padding: 4em 2em;
+    }
+
+    footer {
+        flex-direction: row;
+        align-self: center;
+    }
+
+    .testimonial-author::after {
+        content: "/";
+        color: var(--slash-color, #2E59F3);
+        font-weight: 700;
+        margin: 0 0.5em;
+    }
+}
