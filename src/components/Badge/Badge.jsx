@@ -1,7 +1,6 @@
 import classNames from "classnames"
 import "./Badge.css"
 import "../../index.css"
-import React from "react"
 
 export default function Badge({ badgeColor, shape, className, style, children }) {
 

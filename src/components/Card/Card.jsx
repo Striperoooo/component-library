@@ -2,7 +2,6 @@ import classNames from "classnames"
 import { IoCloudUploadOutline } from "react-icons/io5";
 import "./Card.css"
 import "../../index.css"
-import React from "react"
 
 
 export default function Card({ icon, iconBackground, title, children, className, style }) {
